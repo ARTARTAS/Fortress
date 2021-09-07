@@ -100,7 +100,7 @@ th {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,7 +231,6 @@ body .wrapper .fortress-table-section .fortress-table .fortress-table__fort .dat
   font-weight: 600;
   z-index: 10;
   border: 2px solid #6aa84f;
-  background-color: #6aa84f;
 }
 
 body .wrapper .fortress-table-section .fortress-table .fortress-table__fort .date-input .input__date:invalid {
@@ -239,7 +238,6 @@ body .wrapper .fortress-table-section .fortress-table .fortress-table__fort .dat
   font-weight: 600;
   z-index: 11;
   border: 2px solid #b52a2a;
-  background-color: #b52a2a;
 }
 
 body .wrapper .fortress-table-section .fortress-table .fortress-table__fort .hour-list__item {
