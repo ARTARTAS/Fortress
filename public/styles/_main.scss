@@ -104,13 +104,15 @@ body {
                             color: white;
                             font-weight: 600;
                             z-index: 10;
-                            border: 2px solid $input-aprove;                            
+                            border: 2px solid $input-aprove;
+                            background-color: $input-aprove;
                         }
                         .input__date:invalid {
                             color: black;
                             font-weight: 600;
                             z-index: 11;
-                            border: 2px solid $input-decline;                            
+                            border: 2px solid $input-decline;
+                            border: 1px solid $input-decline;
                         }
                     }
                     .hour-list__item {
