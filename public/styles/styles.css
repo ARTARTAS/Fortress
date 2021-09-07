@@ -239,7 +239,7 @@ body .wrapper .fortress-table-section .fortress-table .fortress-table__fort .dat
   font-weight: 600;
   z-index: 11;
   border: 2px solid #b52a2a;
-  border: 1px solid #b52a2a;
+  background-color: #b52a2a;
 }
 
 body .wrapper .fortress-table-section .fortress-table .fortress-table__fort .hour-list__item {
