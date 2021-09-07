@@ -18,8 +18,8 @@ th {
     padding: 1px;
     border: 1px solid black;
 }
-body {    
-    font-family: 'Montserrat', sans-serif;
+body {
+    font-family: "Montserrat", sans-serif;
     display: flex;
     .header {
         position: absolute;
@@ -102,23 +102,20 @@ body {
                         }
                         .input__date:valid {
                             color: white;
-                            // text-shadow: 1px 1px black;
-                            font-weight: 600;                            
+                            font-weight: 600;
                             z-index: 10;
-                            border: 2px solid $input-aprove;
-                            background-color:$input-aprove;
+                            border: 2px solid $input-aprove;                            
                         }
                         .input__date:invalid {
-                            color: black;                        
-                            font-weight: 600;  
+                            color: black;
+                            font-weight: 600;
                             z-index: 11;
-                            border: 2px solid $input-decline;
-                            background-color:$input-decline;
-                        }                        
+                            border: 2px solid $input-decline;                            
+                        }
                     }
                     .hour-list__item {
-                        border-left: 1px dashed gray ;
-                        border-right: 1px dashed gray ;
+                        border-left: 1px dashed gray;
+                        border-right: 1px dashed gray;
                         background-color: white;
                     }
                     .owners {
@@ -161,8 +158,8 @@ input[type="url"]:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
-.uneditable-input:focus {   
-  border-color: rgba(126, 239, 104, 0.8);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
-  outline: 0 none;
+.uneditable-input:focus {
+    border-color: rgba(126, 239, 104, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+    outline: 0 none;
 }
