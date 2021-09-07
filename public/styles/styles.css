@@ -93,6 +93,10 @@ th {
           user-select: none;
 }
 
+tr {
+  height: 20px;
+}
+
 .hour-list__item {
   font-size: 9px;
   padding: 1px;
@@ -180,6 +184,10 @@ body .wrapper .fortress-table-section .fortress-table .fortress-table__headder {
   color: ivory;
 }
 
+body .wrapper .fortress-table-section .fortress-table .fortress-table__headder th {
+  font-size: 12px;
+}
+
 body .wrapper .fortress-table-section .fortress-table .hour-list {
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -213,6 +221,7 @@ body .wrapper .fortress-table-section .fortress-table .fortress-table__fort .for
 
 body .wrapper .fortress-table-section .fortress-table .fortress-table__fort .date-input {
   position: relative;
+  height: 100%;
   background-color: white;
 }
 
@@ -222,6 +231,7 @@ body .wrapper .fortress-table-section .fortress-table .fortress-table__fort .dat
 }
 
 body .wrapper .fortress-table-section .fortress-table .fortress-table__fort .date-input .input__date {
+  height: 100%;
   width: 100%;
   font-size: 12px;
 }
@@ -246,6 +256,7 @@ body .wrapper .fortress-table-section .fortress-table .fortress-table__fort .hou
   border-left: 1px dashed gray;
   border-right: 1px dashed gray;
   background-color: white;
+  padding: 0;
 }
 
 body .wrapper .fortress-table-section .fortress-table .fortress-table__fort .owners {
@@ -258,10 +269,6 @@ body .wrapper .fortress-table-section .fortress-table .fortress-table__fort .own
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  -ms-flex-wrap: 1;
-      flex-wrap: 1;
 }
 
 body .wrapper .fortress-table-section .fortress-table .fortress-table__fort .clan {
@@ -274,31 +281,5 @@ body .wrapper .fortress-table-section .fortress-table .fortress-table__fort .cla
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  -ms-flex-wrap: 1;
-      flex-wrap: 1;
-}
-
-textarea:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="time"]:focus,
-input[type="week"]:focus,
-input[type="number"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="color"]:focus,
-.uneditable-input:focus {
-  border-color: rgba(126, 239, 104, 0.8);
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
-          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
-  outline: 0 none;
 }
 /*# sourceMappingURL=styles.css.map */
