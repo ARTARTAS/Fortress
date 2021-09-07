@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица времени осад фортов</title>
+    <link rel="stylesheet" href="/styles/styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="wrapper">
+        <section class="fortress-table-section">
+            <div class="table-title">
+                <h1 class="table-title__content">Таблица фортов</h1>
+            </div>
+            <table class="fortress-table">
+                <tr class="fortress-table__headder">
+                    <th class="fortress-number" rowspan="2">№</th>
+                    <th class="fortress-name" colspan="4" rowspan="2">Название форта</th>
+                    <th class="date-imput" colspan="6" rowspan="2">Известное время осады</th>
+                    <th class="day1" colspan="17">00.00</th>
+                    <th class="day2" colspan="7">00.00</th>
+                    <th class="owners" colspan="5" rowspan="2">Хозяева</th>
+                    <th class="clans" colspan="5" rowspan="2">Кланы</th>
+                </tr>
+                <tr class="hour-list">
+                    <th class="hour-list__item">07:00</th>
+                    <th class="hour-list__item">08:00</th>
+                    <th class="hour-list__item">09:00</th>
+                    <th class="hour-list__item">10:00</th>
+                    <th class="hour-list__item">11:00</th>
+                    <th class="hour-list__item">12:00</th>
+                    <th class="hour-list__item">13:00</th>
+                    <th class="hour-list__item">14:00</th>
+                    <th class="hour-list__item">15:00</th>
+                    <th class="hour-list__item">16:00</th>
+                    <th class="hour-list__item">17:00</th>
+                    <th class="hour-list__item">18:00</th>
+                    <th class="hour-list__item">19:00</th>
+                    <th class="hour-list__item">20:00</th>
+                    <th class="hour-list__item">21:00</th>
+                    <th class="hour-list__item">22:00</th>
+                    <th class="hour-list__item">23:00</th>
+                    <th class="hour-list__item">00:00</th>
+                    <th class="hour-list__item">01:00</th>
+                    <th class="hour-list__item">02:00</th>
+                    <th class="hour-list__item">03:00</th>
+                    <th class="hour-list__item">04:00</th>
+                    <th class="hour-list__item">05:00</th>
+                    <th class="hour-list__item">06:00</th>
+                </tr>
+                <tr class="fortress-table__fort">
+                    <th class="fortress-number">1</th>
+                    <th class="fortress-name" colspan="4">
+                        <a href="#" class="Aaru">Aaru</a>
+                    </th>
+                    <th class="date-input" colspan="6">
+                        <input class="input__date" type="datetime-local" name="date1" id='0'>
+                    </th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="owners" colspan="5">
+                        <input class="owner__input" type="text" name="owner1" id='0'>
+                    </th>
+                    <th class="clan" colspan="5">
+                        <input class="clan__input" type="text" name="clan1" id='0'>
+                    </th>
+                </tr>
+                <tr class="fortress-table__fort">
+                    <th class="fortress-number">2</th>
+                    <th class="fortress-name" colspan="4">
+                        <a href="#" class="Antharas">Antharas</a>
+                    </th>
+                    <th class="date-input" colspan="6">
+                        <input class="input__date" type="datetime-local" name="date2" id='0'>
+                    </th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="owners" colspan="5">
+                        <input class="owner__input" type="text" name="owner2" id='0'>
+                    </th>
+                    <th class="clan" colspan="5">
+                        <input class="clan__input" type="text" name="clan2" id='0'>
+                    </th>
+                </tr>
+                <tr class="fortress-table__fort">
+                    <th class="fortress-number">3</th>
+                    <th class="fortress-name" colspan="4">
+                        <a href="#" class="Archaic">Archaic</a>
+                    </th>
+                    <th class="date-input" colspan="6">
+                        <input class="input__date" type="datetime-local" name="date3" id='0'>
+                    </th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="owners" colspan="5">
+                        <input class="owner__input" type="text" name="owner3" id='0'>
+                    </th>
+                    <th class="clan" colspan="5">
+                        <input class="clan__input" type="text" name="clan3" id='0'>
+                    </th>
+                </tr>
+                <tr class="fortress-table__fort">
+                    <th class="fortress-number">4</th>
+                    <th class="fortress-name" colspan="4">
+                        <a href="#" class="Bayou">Bayou</a>
+                    </th>
+                    <th class="date-input" colspan="6">
+                        <input class="input__date" type="datetime-local" name="date4" id='0'>
+                    </th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="owners" colspan="5">
+                        <input class="owner__input" type="text" name="owner4" id='0'>
+                    </th>
+                    <th class="clan" colspan="5">
+                        <input class="clan__input" type="text" name="clan4" id='0'>
+                    </th>
+                </tr>
+                <tr class="fortress-table__fort">
+                    <th class="fortress-number">5</th>
+                    <th class="fortress-name" colspan="4">
+                        <a href="#" class="Borderland">Borderland</a>
+                    </th>
+                    <th class="date-input" colspan="6">
+                        <input class="input__date" type="datetime-local" name="date5" id='0'>
+                    </th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="owners" colspan="5">
+                        <input class="owner__input" type="text" name="owner5" id='0'>
+                    </th>
+                    <th class="clan" colspan="5">
+                        <input class="clan__input" type="text" name="clan5" id='0'>
+                    </th>
+                </tr>
+                <tr class="fortress-table__fort">
+                    <th class="fortress-number">6</th>
+                    <th class="fortress-name" colspan="4">
+                        <a href="#" class="Cloud">Cloud Mountain</a>
+                    </th>
+                    <th class="date-input" colspan="6">
+                        <input class="input__date" type="datetime-local" name="date6" id='0'>
+                    </th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="owners" colspan="5">
+                        <input class="owner__input" type="text" name="owner6" id='0'>
+                    </th>
+                    <th class="clan" colspan="5">
+                        <input class="clan__input" type="text" name="clan6" id='0'>
+                    </th>
+                </tr>
+                <tr class="fortress-table__fort">
+                    <th class="fortress-number">7</th>
+                    <th class="fortress-name" colspan="4">
+                        <a href="#" class="Demon">Demon</a>
+                    </th>
+                    <th class="date-input" colspan="6">
+                        <input class="input__date" type="datetime-local" name="date7" id='0'>
+                    </th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="owners" colspan="5">
+                        <input class="owner__input" type="text" name="owner7" id='0'>
+                    </th>
+                    <th class="clan" colspan="5">
+                        <input class="clan__input" type="text" name="clan7" id='0'>
+                    </th>
+                </tr>
+                <tr class="fortress-table__fort">
+                    <th class="fortress-number">8</th>
+                    <th class="fortress-name" colspan="4">
+                        <a href="#" class="Dragonspine">Dragonspine</a>
+                    </th>
+                    <th class="date-input" colspan="6">
+                        <input class="input__date" type="datetime-local" name="date8" id='0'>
+                    </th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="owners" colspan="5">
+                        <input class="owner__input" type="text" name="owner8" id='0'>
+                    </th>
+                    <th class="clan" colspan="5">
+                        <input class="clan__input" type="text" name="clan8" id='0'>
+                    </th>
+                </tr>
+                <tr class="fortress-table__fort">
+                    <th class="fortress-number">9</th>
+                    <th class="fortress-name" colspan="4">
+                        <a href="#" class="Floran">Floran</a>
+                    </th>
+                    <th class="date-input" colspan="6">
+                        <input class="input__date" type="datetime-local" name="date9" id='0'>
+                    </th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="owners" colspan="5">
+                        <input class="owner__input" type="text" name="owner9" id='0'>
+                    </th>
+                    <th class="clan" colspan="5">
+                        <input class="clan__input" type="text" name="clan9" id='0'>
+                    </th>
+                </tr>
+                <tr class="fortress-table__fort">
+                    <th class="fortress-number">10</th>
+                    <th class="fortress-name" colspan="4">
+                        <a href="#" class="Hive">Hive</a>
+                    </th>
+                    <th class="date-input" colspan="6">
+                        <input class="input__date" type="datetime-local" name="date10" id='0'>
+                    </th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="owners" colspan="5">
+                        <input class="owner__input" type="text" name="owner10" id='0'>
+                    </th>
+                    <th class="clan" colspan="5">
+                        <input class="clan__input" type="text" name="clan10" id='0'>
+                    </th>
+                </tr>
+                <tr class="fortress-table__fort">
+                    <th class="fortress-number">11</th>
+                    <th class="fortress-name" colspan="4">
+                        <a href="#" class="Hunter's">Hunter's</a>
+                    </th>
+                    <th class="date-input" colspan="6">
+                        <input class="input__date" type="datetime-local" name="date11" id='0'>
+                    </th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="owners" colspan="5">
+                        <input class="owner__input" type="text" name="owner11" id='0'>
+                    </th>
+                    <th class="clan" colspan="5">
+                        <input class="clan__input" type="text" name="clan11" id='0'>
+                    </th>
+                </tr>
+                <tr class="fortress-table__fort">
+                    <th class="fortress-number">12</th>
+                    <th class="fortress-name" colspan="4">
+                        <a href="#" class="Ivory">Ivory</a>
+                    </th>
+                    <th class="date-input" colspan="6">
+                        <input class="input__date" type="datetime-local" name="date12" id='0'>
+                    </th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="owners" colspan="5">
+                        <input class="owner__input" type="text" name="owner12" id='0'>
+                    </th>
+                    <th class="clan" colspan="5">
+                        <input class="clan__input" type="text" name="clan12" id='0'>
+                    </th>
+                </tr>
+                <tr class="fortress-table__fort">
+                    <th class="fortress-number">13</th>
+                    <th class="fortress-name" colspan="4">
+                        <a href="#" class="Monastic">Monastic</a>
+                    </th>
+                    <th class="date-input" colspan="6">
+                        <input class="input__date" type="datetime-local" name="date13" id='0'>
+                    </th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="owners" colspan="5">
+                        <input class="owner__input" type="text" name="owner13" id='0'>
+                    </th>
+                    <th class="clan" colspan="5">
+                        <input class="clan__input" type="text" name="clan13" id='0'>
+                    </th>
+                </tr>
+                <tr class="fortress-table__fort">
+                    <th class="fortress-number">14</th>
+                    <th class="fortress-name" colspan="4">
+                        <a href="#" class="Narsell">Narsell</a>
+                    </th>
+                    <th class="date-input" colspan="6">
+                        <input class="input__date" type="datetime-local" name="date14" id='0'>
+                    </th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="owners" colspan="5">
+                        <input class="owner__input" type="text" name="owner14" id='0'>
+                    </th>
+                    <th class="clan" colspan="5">
+                        <input class="clan__input" type="text" name="clan14" id='0'>
+                    </th>
+                </tr>
+                <tr class="fortress-table__fort">
+                    <th class="fortress-number">15</th>
+                    <th class="fortress-name" colspan="4">
+                        <a href="#" class="Shanty">Shanty</a>
+                    </th>
+                    <th class="date-input" colspan="6">
+                        <input class="input__date" type="datetime-local" name="date15" id='0'>
+                    </th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="owners" colspan="5">
+                        <input class="owner__input" type="text" name="owner15" id='0'>
+                    </th>
+                    <th class="clan" colspan="5">
+                        <input class="clan__input" type="text" name="clan15" id='0'>
+                    </th>
+                </tr>
+                <tr class="fortress-table__fort">
+                    <th class="fortress-number">16</th>
+                    <th class="fortress-name" colspan="4">
+                        <a href="#" class="Southern">Southern</a>
+                    </th>
+                    <th class="date-input" colspan="6">
+                        <input class="input__date" type="datetime-local" name="date16" id='0'>
+                    </th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="owners" colspan="5">
+                        <input class="owner__input" type="text" name="owner16" id='0'>
+                    </th>
+                    <th class="clan" colspan="5">
+                        <input class="clan__input" type="text" name="clan16" id='0'>
+                    </th>
+                </tr>
+                <tr class="fortress-table__fort">
+                    <th class="fortress-number">17</th>
+                    <th class="fortress-name" colspan="4">
+                        <a href="#" class="Swamp">Swamp</a>
+                    </th>
+                    <th class="date-input" colspan="6">
+                        <input class="input__date" type="datetime-local" name="date17" id='0'>
+                    </th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="owners" colspan="5">
+                        <input class="owner__input" type="text" name="owner17" id='0'>
+                    </th>
+                    <th class="clan" colspan="5">
+                        <input class="clan__input" type="text" name="clan17" id='0'>
+                    </th>
+                </tr>
+                <tr class="fortress-table__fort">
+                    <th class="fortress-number">18</th>
+                    <th class="fortress-name" colspan="4">
+                        <a href="#" class="Tanor">Tanor</a>
+                    </th>
+                    <th class="date-input" colspan="6">
+                        <input class="input__date" type="datetime-local" name="date18" id='0'>
+                    </th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="owners" colspan="5">
+                        <input class="owner__input" type="text" name="owner18" id='0'>
+                    </th>
+                    <th class="clan" colspan="5">
+                        <input class="clan__input" type="text" name="clan18" id='0'>
+                    </th>
+                </tr>
+                <tr class="fortress-table__fort">
+                    <th class="fortress-number">19</th>
+                    <th class="fortress-name" colspan="4">
+                        <a href="#" class="Valley">Valley</a>
+                    </th>
+                    <th class="date-input" colspan="6">
+                        <input class="input__date" type="datetime-local" name="date18" id='0'>
+                    </th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="owners" colspan="5">
+                        <input class="owner__input" type="text" name="owner19" id='0'>
+                    </th>
+                    <th class="clan" colspan="5">
+                        <input class="clan__input" type="text" name="clan19" id='0'>
+                    </th>
+                </tr>
+                <tr class="fortress-table__fort">
+                    <th class="fortress-number">20</th>
+                    <th class="fortress-name" colspan="4">
+                        <a href="#" class="Western">Western</a>
+                    </th>
+                    <th class="date-input" colspan="6">
+                        <input class="input__date" type="datetime-local" name="date20" id='0'>
+                    </th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="owners" colspan="5">
+                        <input class="owner__input" type="text" name="owner20" id='0'>
+                    </th>
+                    <th class="clan" colspan="5">
+                        <input class="clan__input" type="text" name="clan20" id='0'>
+                    </th>
+                </tr>
+                <tr class="fortress-table__fort">
+                    <th class="fortress-number">21</th>
+                    <th class="fortress-name" colspan="4">
+                        <a href="#" class="White">White Sands</a>
+                    </th>
+                    <th class="date-input" colspan="6">
+                        <input class="input__date" type="datetime-local" name="date21" id='0'>
+                    </th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="hour-list__item"></th>
+                    <th class="owners" colspan="5">
+                        <input class="owner__input" type="text" name="owner21" id='0'>
+                    </th>
+                    <th class="clan" colspan="5">
+                        <input class="clan__input" type="text" name="clan21" id='0'>
+                    </th>
+                </tr>
+            </table>
+        </section>        
+    </main>
+    <script src="/scripts/jquery-3.6.0.min.js"></script>
+    <script src="/scripts/scripts.js"></script>
+    <script src="/scripts/dbinteraction.js"></script>
+</body>
+
+</html>

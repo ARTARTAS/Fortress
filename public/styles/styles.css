@@ -1,0 +1,304 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+td, th, tr, table {
+  border-collapse: collapse;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+td,
+th {
+  border: 1px solid black;
+  overflow: hidden;
+  vertical-align: middle;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.hour-list__item {
+  font-size: 9px;
+  padding: 1px;
+  border: 1px solid black;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(48, 29, 29, 0.5);
+}
+
+body .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+body .wrapper .fortress-table-section {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .wrapper .fortress-table-section .table-title {
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body .wrapper .fortress-table-section .table-title__content {
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+body .wrapper .fortress-table-section .fortress-table {
+  table-layout: fixed;
+  width: 100%;
+  border: 2px solid black;
+}
+
+body .wrapper .fortress-table-section .fortress-table .fortress-table__headder {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: #434343;
+  color: ivory;
+}
+
+body .wrapper .fortress-table-section .fortress-table .hour-list {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body .wrapper .fortress-table-section .fortress-table .hour-list .hour-list__item {
+  background-color: #434343;
+  color: ivory;
+  font-size: 9px;
+  padding: 1px;
+  border: 1px solid black;
+}
+
+body .wrapper .fortress-table-section .fortress-table .fortress-table__fort {
+  background-color: #666666;
+  color: white;
+}
+
+body .wrapper .fortress-table-section .fortress-table .fortress-table__fort .fortress-name {
+  padding-left: 3px;
+  white-space: nowrap;
+  text-align: left;
+}
+
+body .wrapper .fortress-table-section .fortress-table .fortress-table__fort .fortress-name a {
+  font-size: 12px;
+  color: white;
+}
+
+body .wrapper .fortress-table-section .fortress-table .fortress-table__fort .date-input {
+  position: relative;
+  background-color: white;
+}
+
+body .wrapper .fortress-table-section .fortress-table .fortress-table__fort .date-input ::-webkit-calendar-picker-indicator {
+  position: absolute;
+  right: 3px;
+}
+
+body .wrapper .fortress-table-section .fortress-table .fortress-table__fort .date-input .input__date {
+  width: 100%;
+  font-size: 12px;
+}
+
+body .wrapper .fortress-table-section .fortress-table .fortress-table__fort .date-input .input__date:valid {
+  color: white;
+  font-weight: 600;
+  z-index: 10;
+  border: 2px solid #6aa84f;
+  background-color: #6aa84f;
+}
+
+body .wrapper .fortress-table-section .fortress-table .fortress-table__fort .date-input .input__date:invalid {
+  color: black;
+  font-weight: 600;
+  z-index: 11;
+  border: 2px solid #b52a2a;
+  background-color: #b52a2a;
+}
+
+body .wrapper .fortress-table-section .fortress-table .fortress-table__fort .hour-list__item {
+  border-left: 1px dashed gray;
+  border-right: 1px dashed gray;
+  background-color: white;
+}
+
+body .wrapper .fortress-table-section .fortress-table .fortress-table__fort .owners {
+  background-color: white;
+}
+
+body .wrapper .fortress-table-section .fortress-table .fortress-table__fort .owners .owner__input {
+  padding-left: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-wrap: 1;
+      flex-wrap: 1;
+}
+
+body .wrapper .fortress-table-section .fortress-table .fortress-table__fort .clan {
+  background-color: white;
+}
+
+body .wrapper .fortress-table-section .fortress-table .fortress-table__fort .clan .clan__input {
+  padding-left: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-wrap: 1;
+      flex-wrap: 1;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: rgba(126, 239, 104, 0.8);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+  outline: 0 none;
+}
+/*# sourceMappingURL=styles.css.map */
