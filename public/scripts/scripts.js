@@ -82,7 +82,7 @@ function ChangeData(element) {
 }
 
 function CheckDays(element, day, dataTime, list, differ) {
-    if (day == dataTime.day & currentMonth == dataTime.month) { 
+    if (day == dataTime.day & currentMonth == dataTime.month) {
         var pos = 0;
         list.forEach(el => {
             if ($(el).text().split(":")[0] == dataTime.hour) {

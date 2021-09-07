@@ -23,7 +23,6 @@ async function GetData() {
                             $(input).parent().addClass('time');
 
                         }
-
                         if ($(input).css('z-index') == 10) {
                             $(input).parent().addClass('time1');
                         }
