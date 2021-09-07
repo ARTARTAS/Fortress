@@ -97,6 +97,30 @@ tr {
   height: 20px;
 }
 
+.time ::-webkit-datetime-edit-month-field {
+  color: black;
+}
+
+.time ::-webkit-datetime-edit-day-field {
+  color: black;
+}
+
+.time ::-webkit-datetime-edit-year-field {
+  color: black;
+}
+
+.time1 ::-webkit-datetime-edit-month-field {
+  color: white;
+}
+
+.time1 ::-webkit-datetime-edit-day-field {
+  color: white;
+}
+
+.time1 ::-webkit-datetime-edit-year-field {
+  color: white;
+}
+
 .hour-list__item {
   font-size: 9px;
   padding: 1px;

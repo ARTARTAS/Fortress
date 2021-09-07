@@ -19,6 +19,15 @@ async function GetData() {
                     var input = inputs[i];
                     // var InputClass = $('.input__date')
                     if ($(input).attr("type") == "datetime-local") {
+                        if ($(input).css('z-index') == 11) {
+                            $(input).parent().addClass('time');
+
+                        }
+
+                        if ($(input).css('z-index') == 10) {
+                            $(input).parent().addClass('time1');
+                        }
+
                         ChangeData(input);
                     }
                 }
@@ -64,7 +73,8 @@ document.querySelectorAll('input').forEach((element) => {
 
         // invalid option in input
         if ($(element).css('z-index') == 11) {
-            // clear row in table
+            // clear row in table       
+
             var parent = $(element).parent().parent();
             var tableList = $(parent).children(".hour-list__item").toArray();
             tableReset(tableList);

@@ -18,6 +18,29 @@ tr {
     height: 20px;
 }
 
+.time{   
+    ::-webkit-datetime-edit-month-field {
+        color: black;
+    }
+    ::-webkit-datetime-edit-day-field {
+        color: black;
+    }
+    ::-webkit-datetime-edit-year-field {
+        color: black;
+    }
+}
+.time1{
+    ::-webkit-datetime-edit-month-field {
+        color: white;
+    }
+    ::-webkit-datetime-edit-day-field {
+        color: white;
+    }
+    ::-webkit-datetime-edit-year-field {
+        color: white;
+    }
+}
+
 .hour-list__item {
     font-size: 9px;
     padding: 1px;
@@ -106,10 +129,12 @@ body {
                             position: absolute;
                             right: 3px;
                         }
+                        
                         .input__date {
                             height: 100%;
                             width: 100%;
                             font-size: 12px;
+                            
                         }
                         .input__date:valid {
                             color: white;
@@ -117,13 +142,15 @@ body {
                             z-index: 10;
                             border: 2px solid $input-aprove;
                             background-color: $input-aprove;
+                            
                         }
-                        .input__date:invalid {
+                        .input__date:invalid {                            
                             color: black;
                             font-weight: 600;
                             z-index: 11;
                             border: 2px solid $input-decline;
                             background-color: $input-decline;
+                            
                         }
                     }
                     .hour-list__item {
