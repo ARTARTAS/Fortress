@@ -20,13 +20,12 @@ async function GetData() {
                     // var InputClass = $('.input__date')
                     if ($(input).attr("type") == "datetime-local") {
                         if ($(input).css('z-index') == 11) {
-                            $(input).parent().addClass('time');
+                            $(input).parent().removeClass('time1').addClass('time');
 
                         }
                         if ($(input).css('z-index') == 10) {
-                            $(input).parent().addClass('time1');
+                            $(input).parent().removeClass('time').addClass('time1');
                         }
-
                         ChangeData(input);
                     }
                 }
@@ -72,11 +71,15 @@ document.querySelectorAll('input').forEach((element) => {
 
         // invalid option in input
         if ($(element).css('z-index') == 11) {
-            // clear row in table       
+            // clear row in table
 
+            $(element).parent().removeClass('time1').addClass('time');            
             var parent = $(element).parent().parent();
             var tableList = $(parent).children(".hour-list__item").toArray();
             tableReset(tableList);
+        }
+        if ($(element).css('z-index') == 10){
+            $(element).parent().removeClass('time').addClass('time1');
         }
         const data = this.value;
         const id = this.getAttribute("id");
