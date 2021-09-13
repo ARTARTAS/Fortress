@@ -48,9 +48,9 @@ app.post("/api/fortress", jsonParser, function (req, res) {
        
     if(!req.body) return res.sendStatus(400);
        
-    const fortressName = req.body.name;
+    const fortressId= req.body.id;
     const fortressData = req.body.data ;
-    const fortress = {name: fortressName, data: fortressData };
+    const fortress = {id: fortressId, data: fortressData };
        
     const collection = req.app.locals.collection;
     collection.insertOne(fortress, function(err, result){               
@@ -74,12 +74,11 @@ app.post("/api/fortress", jsonParser, function (req, res) {
 app.put("/api/fortress", jsonParser, function(req, res){
         
     if(!req.body) return res.sendStatus(400);
-    const id = new objectId(req.body.id);
-    const fortressName = req.body.name;
+    const fortressId = req.body.id;
     const fortressData  = req.body.data ;
        
     const collection = req.app.locals.collection;
-    collection.findOneAndUpdate({_id: id}, { $set: {data : fortressData , name: fortressName}},
+    collection.findOneAndUpdate({id: fortressId}, { $set: {data : fortressData}},
          {returnDocument: "after" },function(err, result){
                
         if(err) return console.log(err);     

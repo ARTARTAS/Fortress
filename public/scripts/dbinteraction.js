@@ -13,9 +13,9 @@ async function GetData() {
         var inputs = document.querySelectorAll("input");
         for (i = 0; i < inputs.length; i++) {
             for (let b = 0; b < values.length; b++) {
-                if (inputs[i].name == values[b].name) { //если атрибуты name совпадают
+                if (inputs[i].id == values[b].id) { //если атрибуты id совпадают
                     inputs[i].value = values[b].data //установка данных из базы                    
-                    inputs[i].id = values[b]._id //замена дефолтного id на id из базы
+                    inputs[i].name = values[b]._id //замена дефолтного id на id из базы
                     var input = inputs[i];
                     // var InputClass = $('.input__date')
                     if ($(input).attr("type") == "datetime-local") {
@@ -37,28 +37,27 @@ async function GetData() {
 let timerId = setInterval(() => GetData(), 60 * 1000);
 
 // Добавление данных
-async function CreateData(fortressName, fortressData) {
+async function CreateData(fortressId, fortressData) {
 
     const response = await fetch("api/fortress", {
 
         method: "POST",
         headers: { "Accept": "application/json", "Content-Type": "application/json" },
         body: JSON.stringify({
-            name: fortressName,
+            id: fortressId,
             data: fortressData,
         })
     });
 };
 
 // Изменение данных
-async function EditData(fortressId, fortressName, fortressData) {
+async function EditData(fortressId, fortressData) {
     const response = await fetch("api/fortress", {
 
         method: "PUT",
         headers: { "Accept": "application/json", "Content-Type": "application/json" },
         body: JSON.stringify({
             id: fortressId,
-            name: fortressName,
             data: fortressData,
 
         })
@@ -84,10 +83,10 @@ document.querySelectorAll('input').forEach((element) => {
         const data = this.value;
         const id = this.getAttribute("id");
         const name = this.getAttribute("name");
-        if (id == 0)
-            CreateData(name, data); //если ид по дефолту - создаем новый объект
+        if (name == 0)
+            CreateData(id, data); //если ид по дефолту - создаем новый объект
         else
-            EditData(id, name, data);//если ид не по дефолту (уже взят из базы)- изменяем объект
+            EditData(id, data);//если ид не по дефолту (уже взят из базы)- изменяем объект
 
         // если инпут даты - вывод в таблицу
         if ($(element).attr("type") == "datetime-local") {
